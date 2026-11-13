@@ -26,6 +26,8 @@
 /service-norills/ /services/ 301
 /hello-world / 301
 /hello-world/ / 301
+/services/corporate-formation /services/corporate-records/ 301
+/services/corporate-formation/ /services/corporate-records/ 301
 /product/* /pay/ 301
 /product-category/* /services/ 301
 /wp-admin/* / 301

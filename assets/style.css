@@ -464,3 +464,5 @@ body { margin: 0; }
 .download strong { font-size: 1.08rem; }
 .foot-cols .meta a { color: var(--on-forest); }
 [hidden] { display: none !important; }
+
+.page-hero .tagline { margin-top: 14px; font-style: italic; font-size: 1.1rem; color: var(--green, #2C8652); letter-spacing: 0.01em; }

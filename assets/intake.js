@@ -8,12 +8,12 @@
 
   var SERVICES = [
     { key: 's1', title: '1. Assessment and Strategy', items: [['svc-consult', 'Strategy Consultation'], ['svc-discovery', 'Discovery Assessment'], ['svc-roadmap', 'Implementation Roadmap'], ['svc-charts', 'Master Structure Charts'], ['svc-bizplan', 'Comprehensive Business Plan']] },
-    { key: 's2', title: '2. Corporate Formation and Governance', items: [['svc-cfp', 'Corporate Formation Package'], ['svc-articles', 'Articles of Incorporation or Organization Filing'], ['svc-bylaws', 'Custom Bylaws'], ['svc-orgconsent', 'Organizational Unanimous Written Consent'], ['svc-issuance', 'Share Issuance'], ['svc-transfer', 'Share Transfer'], ['svc-resolution', 'Board or Shareholder Resolution'], ['svc-bylawamend', 'Bylaws Amendment'], ['svc-intercompany', 'Intercompany Agreement'], ['svc-ein', 'EIN Application']] },
-    { key: 's3', title: '3. State Compliance and Registrations', items: [['svc-annual', 'Annual Report or Annual Registration'], ['svc-acp', 'Annual Compliance Plan'], ['svc-reinstate', 'Reinstatement'], ['svc-foreign', 'Foreign Qualification'], ['svc-amend', 'Certificate of Amendment'], ['svc-securities', 'Securities Exemption Notice'], ['svc-license', 'Business License Filing'], ['svc-agent', 'Registered Agent and Business Address Setup'], ['svc-dba', 'DBA Filing'], ['svc-duns', 'D-U-N-S Number Setup'], ['svc-goodstanding', 'Certificate of Good Standing']] },
-    { key: 's4', title: '4. Tax Filings', items: [['svc-1120none', 'Form 1120, No Activity'], ['svc-1120act', 'Form 1120 or 1120-S, With Activity'], ['svc-2553', 'Form 2553 (S corporation election)'], ['svc-1023', 'Form 1023-EZ (501(c)(3) tax-exempt status)'], ['svc-8822', 'Form 8822-B (change of address or responsible party)']] },
-    { key: 's5', title: '5. Certifications', items: [['svc-sba', 'SBA Certification (WOSB or EDWOSB)'], ['svc-wbencapp', 'WBENC Application Management'], ['svc-wbencfull', 'WBENC Full-Service Certification'], ['svc-wbencrecert', 'WBENC Annual Recertification']] },
-    { key: 's6', title: '6. Real Estate and Funding Readiness', items: [['svc-property', 'Property Transfer Coordination'], ['svc-funding', 'Funding Readiness Package']] },
-    { key: 's7', title: 'Other Services', items: [['svc-mgmt', 'Monthly Management Services'], ['svc-notary', 'Mobile Notary']] }
+    { key: 's2', title: '2. Corporate Records and Governance', items: [['svc-rebuild', 'Corporate Record Rebuild'], ['svc-bylaws', 'Custom Bylaws'], ['svc-orgconsent', 'Organizational Unanimous Written Consent'], ['svc-issuance', 'Share Issuance'], ['svc-transfer', 'Share Transfer'], ['svc-resolution', 'Board or Shareholder Resolution'], ['svc-bylawamend', 'Bylaws Amendment'], ['svc-intercompany', 'Intercompany Agreement'], ['svc-ein', 'EIN Application'], ['svc-cfp', 'Corporate Formation Package (on request)'], ['svc-articles', 'Articles of Incorporation or Organization Filing (on request)']] },
+    { key: 's3', title: '4. State Compliance and Registrations', items: [['svc-annual', 'Annual Report or Annual Registration'], ['svc-acp', 'Annual Compliance Plan'], ['svc-reinstate', 'Reinstatement'], ['svc-foreign', 'Foreign Qualification'], ['svc-amend', 'Certificate of Amendment'], ['svc-securities', 'Securities Exemption Notice'], ['svc-license', 'Business License Filing'], ['svc-agent', 'Registered Agent and Business Address Setup'], ['svc-dba', 'DBA Filing'], ['svc-duns', 'D-U-N-S Number Setup'], ['svc-goodstanding', 'Certificate of Good Standing']] },
+    { key: 's4', title: '5. Tax Filings', items: [['svc-1120none', 'Form 1120, No Activity'], ['svc-1120act', 'Form 1120 or 1120-S, With Activity'], ['svc-2553', 'Form 2553 (S corporation election)'], ['svc-1023', 'Form 1023-EZ (501(c)(3) tax-exempt status)'], ['svc-8822', 'Form 8822-B (change of address or responsible party)']] },
+    { key: 's5', title: '6. Certifications', items: [['svc-sba', 'SBA Certification (WOSB or EDWOSB)'], ['svc-wbencapp', 'WBENC Application Management'], ['svc-wbencfull', 'WBENC Full-Service Certification'], ['svc-wbencrecert', 'WBENC Annual Recertification']] },
+    { key: 's6', title: '7. Real Estate and Funding Readiness', items: [['svc-property', 'Property Transfer Coordination'], ['svc-funding', 'Funding Readiness Package']] },
+    { key: 's7', title: 'Platforms and Other Services', items: [['svc-platform', 'Platform Build'], ['svc-platformsupport', 'Platform Support Plan'], ['svc-mgmt', 'Monthly Management Services'], ['svc-notary', 'Mobile Notary']] }
   ];
 
   var STEPS = [
@@ -81,7 +81,7 @@
         { id: 'bprecords', label: 'Financial records available', type: 'checks', options: ['Bank statements', 'P&L', 'Tax returns', 'None yet'], full: true, showIf: 'svc-bizplan' },
         { id: 'bpgoals', label: 'Goals for years one, three, and five', type: 'textarea', full: true, showIf: 'svc-bizplan' }
       ] },
-      { key: 's2', heading: 'Module 2: Corporate Formation and Governance', fields: [
+      { key: 's2', heading: 'Module 2: Corporate Records and Governance', fields: [
         { sub: 'Entity details' },
         { id: 'm2new', label: 'New entity or existing entity?', type: 'radio', options: ['New', 'Existing'] },
         { id: 'm2names', label: 'Proposed name and two alternates (new entities)', type: 'textarea', full: true },
