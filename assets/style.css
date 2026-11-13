@@ -13,8 +13,8 @@
   --on-forest: #F1F7F3;
   --on-forest-soft: #B9D2C3;
   --check: #2C8652;
-  --display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --body: "Carlito", Calibri, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --display: "EB Garamond", Garamond, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --body: "EB Garamond", Garamond, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --wrap: 1120px;
 }
@@ -32,14 +32,14 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; font-size: 106.25%; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
   background: var(--ground);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 body::before {
