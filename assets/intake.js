@@ -13,7 +13,7 @@
     { key: 's4', title: '5. Tax Filings', items: [['svc-1120none', 'Form 1120, No Activity'], ['svc-1120act', 'Form 1120 or 1120-S, With Activity'], ['svc-2553', 'Form 2553 (S corporation election)'], ['svc-1023', 'Form 1023-EZ (501(c)(3) tax-exempt status)'], ['svc-8822', 'Form 8822-B (change of address or responsible party)']] },
     { key: 's5', title: '6. Certifications', items: [['svc-sba', 'SBA Certification (WOSB or EDWOSB)'], ['svc-wbencapp', 'WBENC Application Management'], ['svc-wbencfull', 'WBENC Full-Service Certification'], ['svc-wbencrecert', 'WBENC Annual Recertification']] },
     { key: 's6', title: '7. Real Estate and Funding Readiness', items: [['svc-property', 'Property Transfer Coordination'], ['svc-funding', 'Funding Readiness Package']] },
-    { key: 's7', title: 'Platforms and Other Services', items: [['svc-platform', 'Platform Build'], ['svc-platformsupport', 'Platform Support Plan'], ['svc-mgmt', 'Monthly Management Services'], ['svc-notary', 'Mobile Notary']] }
+    { key: 's7', title: 'Systems Architecture and Other Services', items: [['svc-platform', 'Platform Build'], ['svc-platformsupport', 'Platform Support Plan'], ['svc-mgmt', 'Monthly Management Services'], ['svc-notary', 'Mobile Notary']] }
   ];
 
   var STEPS = [
