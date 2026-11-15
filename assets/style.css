@@ -102,9 +102,22 @@ p { margin: 0; }
 .hero .lede { margin-top: 24px; font-size: 1.25rem; color: var(--ink-soft); max-width: 36em; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .hero .note { margin-top: 14px; font-size: 0.95rem; color: var(--ink-soft); }
+.hero h1 span { display: block; }
+@media (min-width: 861px) {
+  .hero .wrap:has(.emblem-plate) { grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); }
+}
+.hero .wrap:has(.emblem-plate) h1 { font-size: clamp(2.3rem, 3.9vw, 3.1rem); line-height: 1.1; }
+.emblem-plate {
+  margin: 0; display: flex; justify-content: center; align-items: center;
+  padding: 40px 32px; background: #FAF7F0; border: 1px solid var(--rule);
+  border-top: 3px solid #C9A54C; border-radius: 0 0 4px 4px;
+}
+.emblem-plate img { width: 100%; max-width: 360px; height: auto; display: block; }
 @media (max-width: 860px) {
   .hero { padding-block: 44px 56px; }
   .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 44px; }
+  .emblem-plate { padding: 28px 24px; }
+  .emblem-plate img { max-width: 240px; }
 }
 
 /* Sample entity record */
