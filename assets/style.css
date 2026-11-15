@@ -129,8 +129,13 @@ p { margin: 0; }
 @media (max-width: 860px) {
   .hero-brand .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .hero-emblem { justify-content: flex-start; }
-  .hero-emblem img { max-width: 170px; }
+  .hero-emblem img { max-width: 128px; }
+  .hero-brand h1 { font-size: min(7.2vw, 2.4rem); line-height: 1.15; }
+  .hero-brand h1 span { white-space: nowrap; }
 }
+.m-only { display: none; }
+@media (max-width: 560px) { .m-only { display: inline; } .eb-sep { display: none; } }
+@media (max-width: 400px) { .hero-brand .eyebrow { letter-spacing: 0.08em; } }
 
 /* Sample entity record */
 .record {
